@@ -7,8 +7,8 @@ emailjs.init({
 const sendEmail=async function(rainLocation, rainTime){
     console.log(1)
     const details={
-        "location":rainLocation,
-        "time":rainTime
+        location:rainLocation,
+        time:rainTime
     }
     console.log(2)
     try{
@@ -22,4 +22,4 @@ const sendEmail=async function(rainLocation, rainTime){
     }
 }
 sendEmail("Kuala Lumpur", "1700")
-crossOriginIsolated.log(6)
+console.log(6)
