@@ -2,7 +2,8 @@ import config from "./emailConfig.js"
 import emailjs from "@emailjs/nodejs"
 
 emailjs.init({
-    privateKey:config.privateKey
+    privateKey:config.privateKey,
+    publicKey:config.publicKey
 })
 
 const sendEmail=async function(rainLocation, rainTime){
