@@ -16,4 +16,4 @@ const sendEmail=async function(rainLocation, rainTime){
         console.log("Failed...", error)
     }
 }
-/*sendEmail("Kuala Lumpur", "1700")*/
+sendEmail("Kuala Lumpur", "1700")
