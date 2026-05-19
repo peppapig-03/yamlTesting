@@ -1,6 +1,19 @@
-import ret123 from "./file1.js"
-const cl456=function(input){
-    console.log(input)
+import config from "./emailConfig.js"
+import emailjs from "@emailjs/browser"
+
+emailjs.init({
+    publicKey:config.publicKey
+})
+const sendEmail=async function(rainLocation, rainTime){
+    const details={
+        "location":rainLocation,
+        "time":rainTime
+    }
+    try{
+        const response=await emailjs.send(config.serviceID,config.templateID,details)
+        console.log("Success!", response.status, response.text)
+    } catch (error){
+        console.log("Failed...", error)
+    }
 }
-cl456(ret123)
-cl456(456)
+/*sendEmail("Kuala Lumpur", "1700")*/

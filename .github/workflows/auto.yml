@@ -13,4 +13,4 @@ jobs:
                 node-version: 22 
             - run: pwd 
             - run: ls 
-            - run: node src/file1.js
+            - run: node src/index.js
