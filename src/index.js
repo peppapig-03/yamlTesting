@@ -2,8 +2,9 @@ import config from "./emailConfig.js"
 import emailjs from "@emailjs/nodejs"
 
 emailjs.init({
-    publicKey:config.publicKey
+    privateKey:config.privateKey
 })
+
 const sendEmail=async function(rainLocation, rainTime){
     console.log(1)
     const details={
@@ -21,5 +22,5 @@ const sendEmail=async function(rainLocation, rainTime){
         console.log("Failed...", error)
     }
 }
-sendEmail("Kuala Lumpur", "1700")
+sendEmail("Shah Alam", "1700")
 console.log(6)
