@@ -13,4 +13,5 @@ jobs:
                 node-version: 22
             - run: pwd
             - run: ls
+            - run: npm install
             - run: node src/index.js
