@@ -1,4 +1,4 @@
-const cl123=function(){
-    console.log(123)
+const ret123=function(){
+    return "123"
 }
-export default cl123
+export default ret123
