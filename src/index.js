@@ -5,7 +5,6 @@ emailjs.init({
     publicKey:config.publicKey
 })
 const sendEmail=async function(rainLocation, rainTime){
-    const emailjs=await initialisation()
     console.log(1)
     const details={
         location:rainLocation,
