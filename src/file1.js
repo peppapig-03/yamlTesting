@@ -1,4 +1,5 @@
-const ret123=function(){
-    return "123"
+import generate from "./file2.js"
+const cl=function(input){
+    console.log(input)
 }
-export default ret123
+cl(generate())
