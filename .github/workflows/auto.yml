@@ -1,6 +1,8 @@
 name: Run_Javascript
 
 on:
+  schedule:
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs: 
